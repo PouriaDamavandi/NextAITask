@@ -15,6 +15,7 @@ import styled from "styled-components";
 const pages = ["خانه", "درباره ما", "مارکت  API"];
 const Img = styled.img`
   margin: 4px 2px;
+  position: relative;
 `;
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -49,6 +50,8 @@ const Header = () => {
         overflow: "hidden",
         flexDirection: "column",
         fontFamily: "Vazirmatn",
+        alignItems: "center",
+        justifyContent: "space-evenly",
       }}
     >
       <Container maxWidth="xl">
@@ -86,14 +89,14 @@ const Header = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
-                  my: 2,
                   display: "block",
                   color: "#9b9b9b",
-                  mr: 5,
-                  ml: 0,
+                  mr: 6,
+                  ml: -4,
                   cursor: "pointer",
                   transition: "all 0.3s ease-in-out",
                   fontFamily: "Vazirmatn",
+                  fontWeight: "400",
                 }}
               >
                 {page}
@@ -113,10 +116,11 @@ const Header = () => {
           <Button
             size="medium"
             sx={{
+              width: "90px",
               fontSize: "1rem",
               display: "flex",
               fontFamily: "Vazirmatn",
-              borderRight: "1rem",
+              marginLeft: 2,
             }}
           >
             ثبت نام
@@ -125,6 +129,7 @@ const Header = () => {
             variant="contained"
             size="medium"
             sx={{
+              width: "90px",
               borderRadius: "40px",
               fontSize: "1rem",
               display: "flex",

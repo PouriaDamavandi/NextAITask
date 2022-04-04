@@ -13,12 +13,11 @@ import middle from "../img/middle.svg";
 import styled from "styled-components";
 
 const IMG = styled.img`
-  height: 70vh;
+  height: 75vh;
   max-width: 100%;
-  position: fixed;
-  top: 10;
+  position: absolute;
   left: 0;
-  margin-top:100px;
+  margin-top: 75px;
 `;
 
 export default function SignIn() {
@@ -37,25 +36,30 @@ export default function SignIn() {
       dir="rtl"
       sx={{
         display: "flex",
-        alignContent: "space-between",
+        alignContent: "space-evenly",
         alignItems: "center",
         flexdirection: "column",
         mt: 10,
-        mr: 2,
-        fontFamily:"Vazirmatn",
+        mr: 25,
+        fontFamily: "Vazirmatn",
+        width: "50vh",
       }}
     >
       <CssBaseline />
       <Box
         sx={{
-          marginTop: 12,
+          marginTop: 10,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           fontFamily: "Vazirmatn",
         }}
       >
-        <Typography component="h1" variant="h4" fontFamily="Vazirmatn">
+        <Typography
+          component="h1"
+          variant="h4"
+          sx={{ mb: 6, fontFamily: "Vazirmatn", borderBottom: 1, pb: "10px" }}
+        >
           ورود
         </Typography>
         <Box
@@ -74,7 +78,8 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
-            sx={{ fontFamily: "Vazirmatn" }}
+            font-family="Vazirmatn"
+            sx={{ fontFamily: "Vazirmatn", textAlign: "right" }}
           />
           <TextField
             variant="standard"
@@ -91,6 +96,7 @@ export default function SignIn() {
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="مرا بخاطر بسپار"
+            sx={{ position: "relative", right: 0 }}
           />
           <Button
             type="submit"
@@ -101,13 +107,36 @@ export default function SignIn() {
             وارد شوید
           </Button>
           <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
+            <Grid item>
+              <Link
+                href="#"
+                variant="body2"
+                sx={{
+                  display: "flex",
+                  fontSize: "1rem",
+                  textAlign: "center",
+                  mt: "30px",
+                  fontFamily: "Vazirmatn",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 گذرواژه خود را فراموش کرده اید؟
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link
+                href="#"
+                variant="body2"
+                sx={{
+                  display: "flex",
+                  fontSize: "1rem",
+                  textAlign: "center",
+                  fontFamily: "Vazirmatn",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 هنوز حساب کاربری ندارید {"ثبت نام کنید"}
               </Link>
             </Grid>
