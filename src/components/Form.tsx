@@ -17,7 +17,7 @@ const IMG = styled.img`
   max-width: 100%;
   position: absolute;
   left: 0;
-  margin-top: 75px;
+  margin-top: 5vh;
 `;
 
 export default function SignIn() {
@@ -45,8 +45,8 @@ export default function SignIn() {
         width: "50vh",
       }}
     >
-      <CssBaseline />
-      <Box
+      <CssBaseline  />
+      <Box 
         sx={{
           marginTop: 10,
           display: "flex",
@@ -78,7 +78,6 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
-            font-family="Vazirmatn"
             sx={{ fontFamily: "Vazirmatn", textAlign: "right" }}
           />
           <TextField
@@ -91,53 +90,52 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-            sx={{ fontFamily: "Vazirmatn" }}
+            sx={{ fontFamily: "Vazirmatn" , textAlign: "right" }}
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="مرا بخاطر بسپار"
-            sx={{ position: "relative", right: 0 }}
+            label="مرا بخاطر بسپار" sx={{textAlign: "right" , fontFamily:"Vazirmatn"}}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 6, mb: 2, borderRadius: "10px" }}
+            sx={{ mt: 6, mb: 2, borderRadius: "10px", fontFamily:"Vazirmatn" }}
           >
             وارد شوید
           </Button>
-          <Grid container>
+          <Grid container sx={{ display: "flex", justifyContent: "center" , mt: "12px" }}>
             <Grid item>
               <Link
                 href="#"
                 variant="body2"
                 sx={{
-                  display: "flex",
+                  color:"black",
                   fontSize: "1rem",
                   textAlign: "center",
-                  mt: "30px",
+                  mt: "100px",
                   fontFamily: "Vazirmatn",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  textDecoration: "none",
                 }}
               >
                 گذرواژه خود را فراموش کرده اید؟
               </Link>
             </Grid>
-            <Grid item>
+            <Grid item sx={{ display: "flex", justifyContent: "center" }}>
               <Link
+                
                 href="#"
                 variant="body2"
                 sx={{
-                  display: "flex",
+                  color:"black",
+                  width: "300px",
                   fontSize: "1rem",
                   textAlign: "center",
                   fontFamily: "Vazirmatn",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  textDecoration: "none",
                 }}
               >
-                هنوز حساب کاربری ندارید {"ثبت نام کنید"}
+                {"هنوز حساب کاربری ندارید ثبت نام کنید"}
               </Link>
             </Grid>
           </Grid>
