@@ -41,12 +41,14 @@ export default function SignIn() {
         alignItems: "center",
         flexdirection: "column",
         mt: 10,
+        mr: 2,
+        fontFamily:"Vazirmatn",
       }}
     >
       <CssBaseline />
       <Box
         sx={{
-          marginTop: 8,
+          marginTop: 12,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -94,7 +96,7 @@ export default function SignIn() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, borderRadius: "10px" }}
+            sx={{ mt: 6, mb: 2, borderRadius: "10px" }}
           >
             وارد شوید
           </Button>
