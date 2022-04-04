@@ -10,11 +10,16 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import middle from "../img/middle.svg";
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Img = styled.img`
-width:100%
-`
+const IMG = styled.img`
+  height: 70vh;
+  max-width: 100%;
+  position: fixed;
+  top: 10;
+  left: 0;
+  margin-top:100px;
+`;
 
 export default function SignIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -35,9 +40,7 @@ export default function SignIn() {
         alignContent: "space-between",
         alignItems: "center",
         flexdirection: "column",
-        mt: 4,
-        
-        
+        mt: 10,
       }}
     >
       <CssBaseline />
@@ -47,15 +50,20 @@ export default function SignIn() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          fontFamily:"Vazirmatn"
+          fontFamily: "Vazirmatn",
         }}
       >
         <Typography component="h1" variant="h4" fontFamily="Vazirmatn">
           ورود
         </Typography>
-        <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 6 , fontFamily:"Vazirmatn"}} >
+        <Box
+          component="form"
+          onSubmit={handleSubmit}
+          noValidate
+          sx={{ mt: 6, fontFamily: "Vazirmatn" }}
+        >
           <TextField
-          variant="standard"
+            variant="standard"
             margin="normal"
             required
             fullWidth
@@ -64,10 +72,10 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
-            sx={{fontFamily:"Vazirmatn"}}
+            sx={{ fontFamily: "Vazirmatn" }}
           />
           <TextField
-          variant="standard"
+            variant="standard"
             margin="normal"
             required
             fullWidth
@@ -76,7 +84,7 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-            sx={{fontFamily:"Vazirmatn"}}
+            sx={{ fontFamily: "Vazirmatn" }}
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
@@ -86,25 +94,25 @@ export default function SignIn() {
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2 ,borderRadius:"10px"}}
+            sx={{ mt: 3, mb: 2, borderRadius: "10px" }}
           >
-            وارد شوید 
+            وارد شوید
           </Button>
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
-گذرواژه خود را فراموش کرده اید؟
+                گذرواژه خود را فراموش کرده اید؟
               </Link>
             </Grid>
             <Grid item>
               <Link href="#" variant="body2">
-                {"Don't have an account? Sign Up"}
+                هنوز حساب کاربری ندارید {"ثبت نام کنید"}
               </Link>
             </Grid>
           </Grid>
         </Box>
       </Box>
-      <Img src={middle} alt="Log in image" />
+      <IMG src={middle} alt="Log in image" />
     </Container>
   );
 }
