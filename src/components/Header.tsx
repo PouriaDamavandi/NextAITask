@@ -49,7 +49,6 @@ const Header = () => {
         display: "flex",
         overflow: "hidden",
         flexDirection: "column",
-        fontFamily: "Vazirmatn",
         alignItems: "center",
         justifyContent: "space-evenly",
       }}
@@ -95,7 +94,6 @@ const Header = () => {
                   ml: -4,
                   cursor: "pointer",
                   transition: "all 0.3s ease-in-out",
-                  fontFamily: "Vazirmatn",
                   fontWeight: "400",
                 }}
               >
@@ -118,7 +116,6 @@ const Header = () => {
               width: "90px",
               fontSize: "1rem",
               display: "flex",
-              fontFamily: "Vazirmatn",
               marginLeft: 2,
             }}
           >
@@ -133,7 +130,6 @@ const Header = () => {
               fontSize: "1rem",
               display: "flex",
               ml: 9,
-              fontFamily: "Vazirmatn",
             }}
           >
             {" ورود"}

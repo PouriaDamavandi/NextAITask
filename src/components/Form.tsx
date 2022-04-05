@@ -41,7 +41,6 @@ export default function SignIn() {
         flexdirection: "column",
         mt: 10,
         mr: 25,
-        fontFamily: "Vazirmatn",
         width: "50vh",
       }}
     >
@@ -52,13 +51,12 @@ export default function SignIn() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          fontFamily: "Vazirmatn",
         }}
       >
         <Typography
           component="h1"
           variant="h4"
-          sx={{ mb: 6, fontFamily: "Vazirmatn", borderBottom: 1, pb: "10px" }}
+          sx={{ mb: 6,  borderBottom: 1, pb: "10px" }}
         >
           {"ورود"}
         </Typography>
@@ -66,7 +64,7 @@ export default function SignIn() {
           component="form"
           onSubmit={handleSubmit}
           noValidate
-          sx={{ mt: 6, fontFamily: "Vazirmatn" }}
+          sx={{ mt: 6}}
         >
           <TextField
             variant="standard"
@@ -78,7 +76,7 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
-            sx={{ fontFamily: "Vazirmatn", textAlign: "right" }}
+            sx={{ textAlign: "right" }}
           />
           <TextField
             variant="standard"
@@ -90,18 +88,18 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-            sx={{ fontFamily: "Vazirmatn", textAlign: "right" }}
+            sx={{ textAlign: "right" }}
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="مرا بخاطر بسپار"
-            sx={{ textAlign: "right", fontFamily: "Vazirmatn" }}
+            sx={{ textAlign: "right"}}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 6, mb: 2, borderRadius: "10px", fontFamily: "Vazirmatn" }}
+            sx={{ mt: 6, mb: 2, borderRadius: "10px"}}
           >
             {"وارد شوید"}
           </Button>
@@ -118,7 +116,6 @@ export default function SignIn() {
                   fontSize: "1rem",
                   textAlign: "center",
                   mt: "100px",
-                  fontFamily: "Vazirmatn",
                   textDecoration: "none",
                 }}
               >
@@ -134,7 +131,6 @@ export default function SignIn() {
                   width: "300px",
                   fontSize: "1rem",
                   textAlign: "center",
-                  fontFamily: "Vazirmatn",
                   textDecoration: "none",
                 }}
               >
