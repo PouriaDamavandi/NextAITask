@@ -122,7 +122,7 @@ const Header = () => {
               marginLeft: 2,
             }}
           >
-            ثبت نام
+            {"ثبت نام "}
           </Button>
           <Button
             variant="contained"
@@ -136,7 +136,8 @@ const Header = () => {
               fontFamily: "Vazirmatn",
             }}
           >
-            ورود
+            {" ورود"}
+            
           </Button>
         </Toolbar>
       </Container>

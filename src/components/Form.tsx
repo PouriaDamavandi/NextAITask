@@ -45,8 +45,8 @@ export default function SignIn() {
         width: "50vh",
       }}
     >
-      <CssBaseline  />
-      <Box 
+      <CssBaseline />
+      <Box
         sx={{
           marginTop: 10,
           display: "flex",
@@ -60,7 +60,7 @@ export default function SignIn() {
           variant="h4"
           sx={{ mb: 6, fontFamily: "Vazirmatn", borderBottom: 1, pb: "10px" }}
         >
-          ورود
+          {"ورود"}
         </Typography>
         <Box
           component="form"
@@ -90,27 +90,31 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-            sx={{ fontFamily: "Vazirmatn" , textAlign: "right" }}
+            sx={{ fontFamily: "Vazirmatn", textAlign: "right" }}
           />
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
-            label="مرا بخاطر بسپار" sx={{textAlign: "right" , fontFamily:"Vazirmatn"}}
+            label="مرا بخاطر بسپار"
+            sx={{ textAlign: "right", fontFamily: "Vazirmatn" }}
           />
           <Button
             type="submit"
             fullWidth
             variant="contained"
-            sx={{ mt: 6, mb: 2, borderRadius: "10px", fontFamily:"Vazirmatn" }}
+            sx={{ mt: 6, mb: 2, borderRadius: "10px", fontFamily: "Vazirmatn" }}
           >
-            وارد شوید
+            {"وارد شوید"}
           </Button>
-          <Grid container sx={{ display: "flex", justifyContent: "center" , mt: "12px" }}>
+          <Grid
+            container
+            sx={{ display: "flex", justifyContent: "center", mt: "12px" }}
+          >
             <Grid item>
               <Link
                 href="#"
                 variant="body2"
                 sx={{
-                  color:"black",
+                  color: "black",
                   fontSize: "1rem",
                   textAlign: "center",
                   mt: "100px",
@@ -118,16 +122,15 @@ export default function SignIn() {
                   textDecoration: "none",
                 }}
               >
-                گذرواژه خود را فراموش کرده اید؟
+                {"گذرواژه خود را فراموش کرده اید؟"}
               </Link>
             </Grid>
             <Grid item sx={{ display: "flex", justifyContent: "center" }}>
               <Link
-                
                 href="#"
                 variant="body2"
                 sx={{
-                  color:"black",
+                  color: "black",
                   width: "300px",
                   fontSize: "1rem",
                   textAlign: "center",
